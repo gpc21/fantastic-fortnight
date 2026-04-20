@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>关于我 - 摄影作品展示</title>
+    <link rel="stylesheet" href="新建 文本文档 (3).css" />
+  </head>
+  <body>
+    <header>
+      <nav aria-label="主导航">
+        <a href="新建 文本文档.html">摄影作品展示</a>
+        <ul>
+          <li><a href="新建 文本文档.html">首页</a></li>
+          <li><a href="portfolio.html">作品集</a></li>
+          <li><a href="about.html" aria-current="page">关于我</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero" aria-labelledby="about-title">
+        <h1 id="about-title">关于我</h1>
+        <p>个人介绍、拍摄方向、合作方式与联系表单。</p>
+      </section>
+
+      <section class="about-layout" aria-labelledby="intro-title">
+        <h2 id="intro-title">个人介绍</h2>
+
+        <div class="about-grid" aria-label="关于我内容与联系表单">
+          <article class="about-card" aria-label="个人简介">
+            <h3>你好，我是你的名字</h3>
+            <p>
+              我专注于<strong>风光、人像与街拍</strong>，偏爱自然光与克制的色彩。拍摄上更关注情绪与叙事：同一座城市、同一条街，在不同光线下会呈现完全不同的表情。
+            </p>
+            <p>
+              可提供：活动摄影、品牌内容、人像写真、旅行跟拍。也欢迎合作共创与版权采购（可按套图/单张授权）。
+            </p>
+
+            <dl class="about-meta" aria-label="基本信息">
+              <div><dt>常驻</dt><dd>你的城市</dd></div>
+              <div><dt>拍摄方向</dt><dd>风光 / 人像 / 街拍</dd></div>
+              <div><dt>设备</dt><dd>相机型号 + 常用镜头</dd></div>
+              <div><dt>邮箱</dt><dd><a href="mailto:your@email.com">your@email.com</a></dd></div>
+            </dl>
+          </article>
+
+          <aside class="contact-card" aria-labelledby="contact-title">
+            <h3 id="contact-title">联系我</h3>
+            <p class="muted">
+              填写后会在页面内模拟提交成功效果（无需后端）。你也可以直接邮件联系。
+            </p>
+
+            <form data-contact-form="true" class="contact-form" novalidate>
+              <label>
+                <span>姓名</span>
+                <input name="name" autocomplete="name" required placeholder="怎么称呼你" />
+              </label>
+
+              <label>
+                <span>邮箱</span>
+                <input
+                  name="email"
+                  type="email"
+                  inputmode="email"
+                  autocomplete="email"
+                  required
+                  placeholder="name@example.com"
+                />
+              </label>
+
+              <label>
+                <span>主题（可选）</span>
+                <input name="subject" autocomplete="off" placeholder="例如：人像拍摄 / 品牌合作" />
+              </label>
+
+              <label>
+                <span>留言</span>
+                <textarea name="message" rows="6" required placeholder="简单说下你的需求、时间与预算范围"></textarea>
+              </label>
+
+              <div class="form-actions">
+                <button type="submit">发送咨询</button>
+                <p class="form-status" data-form-status="true" role="status" aria-live="polite"></p>
+              </div>
+            </form>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <small>© <span>2026</span> 你的名字 / Your Name. 保留所有权利。</small>
+      <address>
+        <a href="mailto:your@email.com">your@email.com</a>
+      </address>
+    </footer>
+    <script src="新建 文本文档 (2).js"></script>
+  </body>
+</html>
